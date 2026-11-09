@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collin Linde, IT technician working in network security</title>
+    <meta
+      name="description"
+      content="Collin Linde is an IT technician at AMTEC Corporation who works on network infrastructure, PKI and 802.1X, and builds radius-admin."
+    />
+    <meta property="og:title" content="Collin Linde" />
+    <meta
+      property="og:description"
+      content="IT technician working on network infrastructure, PKI and 802.1X."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#e9ecef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1730" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Martian+Mono:wdth,wght@75..112.5,400..600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a href="./">clinde.me</a>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1 class="dump-fallback" id="name">
+          Collin Linde<span class="sr-only">, IT technician at AMTEC Corporation</span>
+        </h1>
+        <div class="dump" id="dump" aria-hidden="true" hidden></div>
+        <p class="dump-status" id="dump-status" aria-hidden="true" hidden></p>
+
+        <p class="lede">
+          I'm an IT technician at AMTEC Corporation. I look after the network and the people who
+          use it, and security is the part of the job I care about most.
+        </p>
+      </section>
+
+      <section class="section" id="work">
+        <h2>What I do at AMTEC</h2>
+        <dl class="facts">
+          <dt>Network access control</dt>
+          <dd>
+            Implemented 802.1X authentication for wired and wireless connections, so a device has
+            to prove what it is before it gets on the network.
+          </dd>
+          <dt>Public key infrastructure</dt>
+          <dd>Implemented a PKI solution to issue and manage the company's certificates.</dd>
+          <dt>Firewalls and switching</dt>
+          <dd>Configure switches, firewalls and firewall policies across the network.</dd>
+          <dt>Group Policy</dt>
+          <dd>Configure the Group Policy objects that set how Windows machines behave.</dd>
+          <dt>User support</dt>
+          <dd>Help people with whatever is stopping them from working.</dd>
+        </dl>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li class="project">
+            <h3>radius-admin</h3>
+            <p>
+              A secure web console for FreeRADIUS. It manages 802.1X, MAC authentication bypass,
+              RadSec and switch logins from the browser. Every change is validated before
+              FreeRADIUS sees it and rolled back automatically if the server doesn't come back up.
+            </p>
+            <p class="role">Python, Flask, PostgreSQL and FreeRADIUS 3.2</p>
+            <p class="links">
+              <a href="https://radiusadmin.github.io/radius-admin/">Project website</a>
+              <a href="https://github.com/radiusadmin/radius-admin">Source on GitHub</a>
+            </p>
+          </li>
+
+          <li class="project">
+            <h3>Ultimate CA Manager</h3>
+            <p>
+              An open-source, self-hosted certificate authority with a web interface. I reported
+              three bugs and contributed the fixes:
+            </p>
+            <ul>
+              <li>
+                SAML role mapping ignored the groups sent by the identity provider, so every user
+                got the default role
+                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/408">issue 408</a>).
+              </li>
+              <li>
+                Windows certificate enrollment failed in FIPS mode because SHA-1 request signatures
+                were refused
+                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/404">issue 404</a>).
+              </li>
+              <li>
+                The certificate request page stopped at 20 requests
+                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/424">issue 424</a>).
+              </li>
+            </ul>
+            <p class="links">
+              <a href="https://github.com/NeySlim/ultimate-ca-manager">Source on GitHub</a>
+            </p>
+          </li>
+
+          <li class="project">
+            <h3>Text Percent Calculator</h3>
+            <p>
+              Paste some text, enter a word or phrase, and see what share of the text it makes up.
+              It runs in your browser and sends nothing anywhere.
+            </p>
+            <p class="links">
+              <a href="tools/text-percent/">Open the calculator</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="labs">
+        <h2>Labs and CTFs</h2>
+        <dl class="facts">
+          <dt>Hack The Box</dt>
+          <dd>Capture-the-flag challenges, for practice on the offensive side.</dd>
+          <dt>Home lab</dt>
+          <dd>
+            A test environment of my own, where I run exploits with tools like the Metasploit
+            Framework to see how attacks work.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="section" id="about">
+        <h2>About</h2>
+        <div class="about">
+          <div>
+            <p>
+              I'm from Wisconsin. I like programming and learning new things, and I write websites
+              and scripts to automate everyday tasks.
+            </p>
+            <p>
+              I studied cybersecurity at the University of Wisconsin-Platteville for two years,
+              and I'm finishing the degree online through Western Governors University.
+            </p>
+          </div>
+          <img
+            src="assets/collin-stairs.jpg"
+            alt="Collin Linde standing on a staircase in front of a brick building"
+            width="1472"
+            height="2208"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div>
+          <p>
+            <a class="contact-email" href="mailto:clinde.ionos@gmail.com">clinde.ionos@gmail.com</a>
+          </p>
+          <p><a href="https://github.com/clinde04">github.com/clinde04</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">Collin Linde, Wisconsin.</footer>
+
+    <script src="dump.js"></script>
+  </body>
+</html>
