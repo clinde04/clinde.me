@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page not found | Collin Linde</title>
+    <meta name="theme-color" content="#252525" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Martian+Mono:wdth,wght@75..112.5,400..600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header class="site-header wrap">
-      <a href="/">clinde.me</a>
+    <div class="orb" id="orb" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav-home" href="/">clinde.me</a>
     </header>
-    <main class="wrap">
-      <div class="tool-intro">
-        <h1>0x0194: page not found</h1>
-        <p>There is nothing at this address. <a href="/">Go to the home page</a>.</p>
+
+    <main class="page">
+      <div class="page-inner">
+        <h1>Page not found</h1>
+        <p class="page-intro">There is nothing at this address. <a href="/">Go to the home page</a>.</p>
       </div>
     </main>
+
+    <script src="/site.js"></script>
   </body>
 </html>

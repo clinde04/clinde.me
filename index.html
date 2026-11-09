@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Collin Linde, IT technician working in network security</title>
+    <title>Collin Linde</title>
     <meta
       name="description"
       content="Collin Linde is an IT technician at AMTEC Corporation who works on network infrastructure, PKI and 802.1X, and builds radius-admin."
@@ -14,78 +14,110 @@
       content="IT technician working on network infrastructure, PKI and 802.1X."
     />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#e9ecef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0e1730" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#252525" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Martian+Mono:wdth,wght@75..112.5,400..600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header wrap">
-      <a href="./">clinde.me</a>
-      <nav aria-label="Sections">
+    <div class="orb" id="orb" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav-home" href="./">clinde.me</a>
+      <nav class="nav-links" aria-label="Sections">
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main class="wrap">
+    <main>
       <section class="hero">
-        <h1 class="dump-fallback" id="name">
-          Collin Linde<span class="sr-only">, IT technician at AMTEC Corporation</span>
-        </h1>
-        <div class="dump" id="dump" aria-hidden="true" hidden></div>
-        <p class="dump-status" id="dump-status" aria-hidden="true" hidden></p>
+        <div class="hero-inner">
+          <img
+            class="hero-photo"
+            src="assets/collin-stairs.jpg"
+            alt="Collin Linde standing on a staircase in front of a brick building"
+            width="1472"
+            height="2208"
+          />
+          <div class="hero-text">
+            <h1>I'm Collin Linde from Wisconsin</h1>
+            <p>
+              I am an IT technician at AMTEC Corporation working on network infrastructure and
+              security.
+            </p>
+            <div class="socials">
+              <a href="https://github.com/clinde04" aria-label="GitHub profile">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:clinde.ionos@gmail.com" aria-label="Email Collin">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+                  <path d="m3.5 7 8.5 6.5L20.500 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <p class="lede">
-          I'm an IT technician at AMTEC Corporation. I look after the network and the people who
-          use it, and security is the part of the job I care about most.
-        </p>
+        <svg class="caret" id="caret" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h10l-5 6z" />
+        </svg>
       </section>
 
-      <section class="section" id="work">
-        <h2>What I do at AMTEC</h2>
-        <dl class="facts">
-          <dt>Network access control</dt>
-          <dd>
-            Implemented 802.1X authentication for wired and wireless connections, so a device has
-            to prove what it is before it gets on the network.
-          </dd>
-          <dt>Public key infrastructure</dt>
-          <dd>Implemented a PKI solution to issue and manage the company's certificates.</dd>
-          <dt>Firewalls and switching</dt>
-          <dd>Configure switches, firewalls and firewall policies across the network.</dd>
-          <dt>Group Policy</dt>
-          <dd>Configure the Group Policy objects that set how Windows machines behave.</dd>
-          <dt>User support</dt>
-          <dd>Help people with whatever is stopping them from working.</dd>
-        </dl>
-      </section>
+      <div class="sections">
+        <section class="section" id="work">
+          <h2>What I do at AMTEC</h2>
+          <div class="panel">
+            <dl class="facts">
+              <dt>Network access control</dt>
+              <dd>
+                Implemented 802.1X authentication for wired and wireless connections, so a device
+                has to prove what it is before it gets on the network.
+              </dd>
+              <dt>Public key infrastructure</dt>
+              <dd>Implemented a PKI solution to issue and manage the company's certificates.</dd>
+              <dt>Firewalls and switching</dt>
+              <dd>Configure switches, firewalls and firewall policies across the network.</dd>
+              <dt>Group Policy</dt>
+              <dd>Configure the Group Policy objects that set how Windows machines behave.</dd>
+              <dt>User support</dt>
+              <dd>Help people with whatever is stopping them from working.</dd>
+            </dl>
+          </div>
+        </section>
 
-      <section class="section" id="projects">
-        <h2>Projects</h2>
-        <ul class="projects">
-          <li class="project">
+        <section class="section" id="projects">
+          <h2>Projects</h2>
+
+          <article class="panel">
             <h3>radius-admin</h3>
             <p>
               A secure web console for FreeRADIUS. It manages 802.1X, MAC authentication bypass,
               RadSec and switch logins from the browser. Every change is validated before
               FreeRADIUS sees it and rolled back automatically if the server doesn't come back up.
             </p>
-            <p class="role">Python, Flask, PostgreSQL and FreeRADIUS 3.2</p>
+            <p class="muted">Python, Flask, PostgreSQL and FreeRADIUS 3.2</p>
             <p class="links">
               <a href="https://radiusadmin.github.io/radius-admin/">Project website</a>
               <a href="https://github.com/radiusadmin/radius-admin">Source on GitHub</a>
             </p>
-          </li>
+          </article>
 
-          <li class="project">
+          <article class="panel">
             <h3>Ultimate CA Manager</h3>
             <p>
               An open-source, self-hosted certificate authority with a web interface. I reported
@@ -98,8 +130,8 @@
                 (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/408">issue 408</a>).
               </li>
               <li>
-                Windows certificate enrollment failed in FIPS mode because SHA-1 request signatures
-                were refused
+                Windows certificate enrollment failed in FIPS mode because SHA-1 request
+                signatures were refused
                 (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/404">issue 404</a>).
               </li>
               <li>
@@ -110,70 +142,66 @@
             <p class="links">
               <a href="https://github.com/NeySlim/ultimate-ca-manager">Source on GitHub</a>
             </p>
-          </li>
+          </article>
 
-          <li class="project">
+          <article class="panel">
             <h3>Text Percent Calculator</h3>
             <p>
-              Paste some text, enter a word or phrase, and see what share of the text it makes up.
-              It runs in your browser and sends nothing anywhere.
+              A tool to calculate how much of a piece of text is made up of a certain word or
+              phrase. It runs in your browser and sends nothing anywhere.
             </p>
             <p class="links">
               <a href="tools/text-percent/">Open the calculator</a>
             </p>
-          </li>
-        </ul>
-      </section>
+          </article>
+        </section>
 
-      <section class="section" id="labs">
-        <h2>Labs and CTFs</h2>
-        <dl class="facts">
-          <dt>Hack The Box</dt>
-          <dd>Capture-the-flag challenges, for practice on the offensive side.</dd>
-          <dt>Home lab</dt>
-          <dd>
-            A test environment of my own, where I run exploits with tools like the Metasploit
-            Framework to see how attacks work.
-          </dd>
-        </dl>
-      </section>
+        <section class="section" id="labs">
+          <h2>Labs and CTFs</h2>
+          <div class="panel">
+            <dl class="facts">
+              <dt>Hack The Box</dt>
+              <dd>Capture-the-flag challenges, for practice on the offensive side.</dd>
+              <dt>Home lab</dt>
+              <dd>
+                A test environment of my own, where I run exploits with tools like the Metasploit
+                Framework to see how attacks work.
+              </dd>
+            </dl>
+          </div>
+        </section>
 
-      <section class="section" id="about">
-        <h2>About</h2>
-        <div class="about">
-          <div>
+        <section class="section" id="about">
+          <h2>About</h2>
+          <div class="panel">
             <p>
-              I'm from Wisconsin. I like programming and learning new things, and I write websites
-              and scripts to automate everyday tasks.
+              I love programming and learning new things. My main interest is cybersecurity,
+              however I enjoy making websites and scripts to simplify and automate everyday
+              tasks.
             </p>
             <p>
               I studied cybersecurity at the University of Wisconsin-Platteville for two years,
               and I'm finishing the degree online through Western Governors University.
             </p>
           </div>
-          <img
-            src="assets/collin-stairs.jpg"
-            alt="Collin Linde standing on a staircase in front of a brick building"
-            width="1472"
-            height="2208"
-            loading="lazy"
-          />
-        </div>
-      </section>
+        </section>
 
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <div>
-          <p>
-            <a class="contact-email" href="mailto:clinde.ionos@gmail.com">clinde.ionos@gmail.com</a>
-          </p>
-          <p><a href="https://github.com/clinde04">github.com/clinde04</a></p>
-        </div>
-      </section>
+        <section class="section contact" id="contact">
+          <h2>Contact</h2>
+          <a class="contact-email" href="mailto:clinde.ionos@gmail.com">clinde.ionos@gmail.com</a>
+          <div class="socials">
+            <a href="https://github.com/clinde04" aria-label="GitHub profile">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer wrap">Collin Linde, Wisconsin.</footer>
-
-    <script src="dump.js"></script>
+    <script src="site.js"></script>
   </body>
 </html>

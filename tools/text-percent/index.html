@@ -8,72 +8,66 @@
       name="description"
       content="Work out what share of a piece of text is made up of a given word or phrase."
     />
-    <meta name="theme-color" content="#e9ecef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0e1730" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#252525" />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Martian+Mono:wdth,wght@75..112.5,400..600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
-    <header class="site-header wrap">
-      <a href="../../">clinde.me</a>
-      <nav aria-label="Site">
+    <div class="orb" id="orb" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav-home" href="../../">clinde.me</a>
+      <nav class="nav-links" aria-label="Site">
         <a href="../../#projects">Projects</a>
         <a href="../../#contact">Contact</a>
       </nav>
     </header>
 
-    <main class="wrap">
-      <div class="tool-intro">
+    <main class="page">
+      <div class="page-inner">
         <h1>Text Percent Calculator</h1>
-        <p>
+        <p class="page-intro">
           Paste some text and enter a word or phrase to see what share of the words it accounts
           for. Everything is calculated in your browser.
         </p>
-      </div>
 
-      <div class="tool">
-        <div>
-          <label class="field">
-            <span>Text</span>
-            <textarea id="text" placeholder="Type or paste text here"></textarea>
-          </label>
-          <label class="field">
-            <span>Word or phrase to look for</span>
-            <input id="query" type="text" autocomplete="off" spellcheck="false" />
-          </label>
+        <div class="tool">
+          <div class="panel">
+            <label class="field">
+              <span>Text</span>
+              <textarea id="text" placeholder="Type or paste text here"></textarea>
+            </label>
+            <label class="field">
+              <span>Word or phrase to look for</span>
+              <input id="query" type="text" autocomplete="off" spellcheck="false" />
+            </label>
 
-          <div aria-live="polite">
-            <p class="result" id="result">0%</p>
-            <p class="result-detail" id="detail">Enter some text to get started.</p>
+            <div aria-live="polite">
+              <p class="result" id="result">0%</p>
+              <p class="result-detail" id="detail">Enter some text to get started.</p>
+            </div>
+            <p class="preview" id="preview" hidden></p>
           </div>
-          <p class="preview" id="preview" hidden></p>
-        </div>
 
-        <div>
-          <h2>Most used words</h2>
-          <p class="empty" id="freq-empty">Word counts appear here once you enter text.</p>
-          <table class="freq" id="freq" hidden>
-            <thead>
-              <tr>
-                <th scope="col">Word</th>
-                <th scope="col" class="num">Count</th>
-                <th scope="col" class="num">Share</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+          <div class="panel">
+            <h2>Most used words</h2>
+            <p class="empty" id="freq-empty">Word counts appear here once you enter text.</p>
+            <table class="freq" id="freq" hidden>
+              <thead>
+                <tr>
+                  <th scope="col">Word</th>
+                  <th scope="col" class="num">Count</th>
+                  <th scope="col" class="num">Share</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="site-footer wrap">Collin Linde, Wisconsin.</footer>
-
+    <script src="../../site.js"></script>
     <script src="text-percent.js"></script>
   </body>
 </html>

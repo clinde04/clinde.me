@@ -7,7 +7,7 @@ Plain HTML, CSS and JavaScript with no build step.
 | Path | What it is |
 | --- | --- |
 | `index.html` | The home page |
-| `dump.js` | The hex viewer in the hero. Edit the `FIELDS` array to change its text (16 characters per row at most). |
+| `site.js` | The purple orb that follows the mouse, and the scroll hint in the hero |
 | `styles.css` | All styles, shared by every page |
 | `tools/text-percent/` | The Text Percent Calculator |
 | `utils/textpercent/` | Redirect from the calculator's old address |
