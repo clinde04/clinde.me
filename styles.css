@@ -312,6 +312,47 @@ a:hover {
   overflow-wrap: anywhere;
 }
 
+/* Project cards: a screenshot beside the text, stacked above it on phones. */
+
+.project {
+  display: grid;
+  grid-template-columns: clamp(11rem, 32%, 17rem) minmax(0, 1fr);
+  gap: 1.25rem 1.75rem;
+  align-items: start;
+}
+
+.project-shot {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 0.375rem;
+  background: var(--rule);
+}
+
+.project-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: scale 0.2s;
+}
+
+.project-shot:hover img {
+  scale: 1.04;
+}
+
+@media (max-width: 40rem) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project-shot {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* Calculator pieces shared by both designs */
 
 .tool {
@@ -803,6 +844,15 @@ html.d-classic {
   color: var(--on-accent);
 }
 
+/* Text decode effect (decode.js): the scrambled window, and the text still to come. */
+.decode-noise {
+  color: var(--faint);
+}
+
+.decode-rest {
+  visibility: hidden;
+}
+
 .dump-status {
   font-family: var(--font-display);
   font-stretch: 75%;
@@ -908,6 +958,10 @@ html.d-classic {
   font-weight: 600;
 }
 
+.d-hex .project-shot {
+  border-radius: 2px;
+}
+
 .d-hex .about {
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(10rem, 22vw, 15rem);
@@ -1002,7 +1056,8 @@ html.d-classic {
   }
 
   .hero-photo,
-  .socials a {
+  .socials a,
+  .project-shot img {
     transition: none;
   }
 }

@@ -41,6 +41,9 @@
     if (hex) {
       loadFonts();
       if (window.hexDump) window.hexDump.start();
+      if (window.textDecode) window.textDecode.start();
+    } else if (window.textDecode) {
+      window.textDecode.stop();
     }
   }
 

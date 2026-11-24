@@ -120,56 +120,72 @@
         <section class="section" id="projects">
           <h2>Projects</h2>
 
-          <article class="panel">
-            <h3>radius-admin</h3>
-            <p>
-              A secure web console for FreeRADIUS. It manages 802.1X, MAC authentication bypass,
-              RadSec and switch logins from the browser. Every change is validated before
-              FreeRADIUS sees it and rolled back automatically if the server doesn't come back up.
-            </p>
-            <p class="small">Python, Flask, PostgreSQL and FreeRADIUS 3.2</p>
-            <p class="links">
-              <a href="https://radiusadmin.github.io/radius-admin/">Project website</a>
-              <a href="https://github.com/radiusadmin/radius-admin">Source on GitHub</a>
-            </p>
+          <article class="panel project">
+            <a class="project-shot" href="https://radiusadmin.net/" tabindex="-1" aria-hidden="true">
+              <img src="assets/projects/radius-admin.jpg" alt="" width="1280" height="800" loading="lazy" decoding="async" />
+            </a>
+            <div class="project-body">
+              <h3>radius-admin</h3>
+              <p>
+                A secure web console for FreeRADIUS. It manages 802.1X, MAC authentication bypass,
+                RadSec and switch logins from the browser. Every change is validated before
+                FreeRADIUS sees it and rolled back automatically if the server doesn't come back up.
+              </p>
+              <p class="small">Python, Flask, PostgreSQL and FreeRADIUS 3.2</p>
+              <p class="links">
+                <a href="https://radiusadmin.net/">radiusadmin.net</a>
+                <a href="https://github.com/radiusadmin/radius-admin">Source on GitHub</a>
+              </p>
+            </div>
           </article>
 
-          <article class="panel">
-            <h3>Ultimate CA Manager</h3>
-            <p>
-              An open-source, self-hosted certificate authority with a web interface. I reported
-              three bugs and contributed the fixes:
-            </p>
-            <ul>
-              <li>
-                SAML role mapping ignored the groups sent by the identity provider, so every user
-                got the default role
-                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/408">issue 408</a>).
-              </li>
-              <li>
-                Windows certificate enrollment failed in FIPS mode because SHA-1 request
-                signatures were refused
-                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/404">issue 404</a>).
-              </li>
-              <li>
-                The certificate request page stopped at 20 requests
-                (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/424">issue 424</a>).
-              </li>
-            </ul>
-            <p class="links">
-              <a href="https://github.com/NeySlim/ultimate-ca-manager">Source on GitHub</a>
-            </p>
+          <article class="panel project">
+            <a class="project-shot" href="https://ucm.tools/" tabindex="-1" aria-hidden="true">
+              <img src="assets/projects/ucm.jpg" alt="" width="1280" height="800" loading="lazy" decoding="async" />
+            </a>
+            <div class="project-body">
+              <h3>Ultimate CA Manager</h3>
+              <p>
+                An open-source, self-hosted certificate authority with a web interface. I reported
+                three bugs and contributed the fixes:
+              </p>
+              <ul>
+                <li>
+                  SAML role mapping ignored the groups sent by the identity provider, so every user
+                  got the default role
+                  (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/408">issue 408</a>).
+                </li>
+                <li>
+                  Windows certificate enrollment failed in FIPS mode because SHA-1 request
+                  signatures were refused
+                  (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/404">issue 404</a>).
+                </li>
+                <li>
+                  The certificate request page stopped at 20 requests
+                  (<a href="https://github.com/NeySlim/ultimate-ca-manager/issues/424">issue 424</a>).
+                </li>
+              </ul>
+              <p class="links">
+                <a href="https://ucm.tools/">ucm.tools</a>
+                <a href="https://github.com/NeySlim/ultimate-ca-manager">Source on GitHub</a>
+              </p>
+            </div>
           </article>
 
-          <article class="panel">
-            <h3>Text Percent Calculator</h3>
-            <p>
-              A tool to calculate how much of a piece of text is made up of a certain word or
-              phrase. It runs in your browser and sends nothing anywhere.
-            </p>
-            <p class="links">
-              <a href="tools/text-percent/">Open the calculator</a>
-            </p>
+          <article class="panel project">
+            <a class="project-shot" href="tools/text-percent/" tabindex="-1" aria-hidden="true">
+              <img src="assets/projects/text-percent.jpg" alt="" width="1280" height="800" loading="lazy" decoding="async" />
+            </a>
+            <div class="project-body">
+              <h3>Text Percent Calculator</h3>
+              <p>
+                A tool to calculate how much of a piece of text is made up of a certain word or
+                phrase. It runs in your browser and sends nothing anywhere.
+              </p>
+              <p class="links">
+                <a href="tools/text-percent/">Open the calculator</a>
+              </p>
+            </div>
           </article>
         </section>
 
@@ -226,6 +242,7 @@
     </main>
 
     <script src="dump.js"></script>
+    <script src="decode.js"></script>
     <script src="site.js"></script>
   </body>
 </html>
